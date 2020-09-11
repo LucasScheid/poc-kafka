@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProduzirTopico", "ProduzirTopico\ProduzirTopico.csproj", "{5352AB61-8F4C-436D-B30E-607763D9D22B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProduzirTopico", "ProduzirTopico\ProduzirTopico.csproj", "{5352AB61-8F4C-436D-B30E-607763D9D22B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumirTopico", "ConsumirTopico\ConsumirTopico.csproj", "{CC21214C-30AF-4AAD-B08C-125606D1C1B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumirTopico", "ConsumirTopico\ConsumirTopico.csproj", "{CC21214C-30AF-4AAD-B08C-125606D1C1B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "componente-confluent-kafka", "componente-confluent-kafka", "{F2B665A5-FB12-4F67-BA69-C9C7D36C9422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnvioKafka", "EnvioKafka\EnvioKafka.csproj", "{BF62371C-82AA-46F4-829C-573EC7AEE857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoKafka", "ConsumoKafka\ConsumoKafka.csproj", "{CAA3F6A5-A88F-43A0-9363-4C827BBD754B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,21 @@ Global
 		{CC21214C-30AF-4AAD-B08C-125606D1C1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC21214C-30AF-4AAD-B08C-125606D1C1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC21214C-30AF-4AAD-B08C-125606D1C1B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF62371C-82AA-46F4-829C-573EC7AEE857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF62371C-82AA-46F4-829C-573EC7AEE857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF62371C-82AA-46F4-829C-573EC7AEE857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF62371C-82AA-46F4-829C-573EC7AEE857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA3F6A5-A88F-43A0-9363-4C827BBD754B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA3F6A5-A88F-43A0-9363-4C827BBD754B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA3F6A5-A88F-43A0-9363-4C827BBD754B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA3F6A5-A88F-43A0-9363-4C827BBD754B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF62371C-82AA-46F4-829C-573EC7AEE857} = {F2B665A5-FB12-4F67-BA69-C9C7D36C9422}
+		{CAA3F6A5-A88F-43A0-9363-4C827BBD754B} = {F2B665A5-FB12-4F67-BA69-C9C7D36C9422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E327762D-8AD3-4394-9BE0-13B45D94953A}
